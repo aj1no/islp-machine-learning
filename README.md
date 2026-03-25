@@ -1,8 +1,8 @@
-# 📊 ISLP Machine Learning Exercises
+#  ISLP Machine Learning Exercises
 
 Este repositório contém exercícios resolvidos de classificação usando modelos de **Machine Learning** no Python com `scikit-learn` e o pacote didático `ISLP`. O código-fonte explora diferentes algoritmos de classificação e os efeitos na precisão estatística ao separar os dados de Treino/Teste vs usar a base completa.
 
-## 🚀 O que tem no código?
+##  O que tem no código?
 
 O script principal `exercicios_logistica.py` conta com 3 partes práticas:
 
