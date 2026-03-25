@@ -14,7 +14,7 @@ O script principal `exercicios_logistica.py` conta com 3 partes práticas:
    - `ISLP::Caravan` (Alvo: *Purchase*)
 3. **Regressão Logística Básica**: Remove o `train_test_split` e treina e verifica as informações na base de forma inteira com a demonstração estatística do modelo prever amostras que ele próprio já conhecia ("Erro de Treinamento Superestimado").
 
-## 🛠 Bibliotecas e Instalação
+##  Bibliotecas e Instalação
 Para poder rodar o mesmo projeto, tenha o Python 3.10+ e rode o comando abaixo no seu terminal para puxar os requisitos fundamentais:
 
 ```bash
