@@ -1,28 +1,41 @@
-#  ISLP Machine Learning Exercises
+# ISLP Machine Learning Exercises
 
-Este repositório contém exercícios resolvidos de classificação usando modelos de **Machine Learning** no Python com `scikit-learn` e o pacote didático `ISLP`. O código-fonte explora diferentes algoritmos de classificação e os efeitos na precisão estatística ao separar os dados de Treino/Teste vs usar a base completa.
+*[Ler em Português](README.pt-br.md)*
 
-##  O que tem no código?
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.4%2B-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-3.8-11557c?style=flat-square)](https://matplotlib.org/)
+[![License MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![CI](https://img.shields.io/github/actions/workflow/status/aj1no/islp-machine-learning/ci.yml?branch=main&label=CI&style=flat-square)](https://github.com/aj1no/islp-machine-learning/actions)
 
-O script principal `exercicios_logistica.py` conta com 3 partes práticas:
+This repository contains solved classification exercises using Machine Learning models in Python with `scikit-learn` and the `ISLP` textbook package. The source code explores different classification algorithms and the effects on statistical accuracy when separating Train/Test data vs using the full dataset.
 
-1. **Random Forest e Dataset de Câncer de Mama**: Carrega os dados nativos do `sklearn`, treina o modelo separando 80%/20%, plota o heatmap de uma matriz de confusão e solta um relatório completo.
-2. **Regressão Logística com Separação de Dados**: Refaz 4 exercícios clássicos da biblioteca `ISLP`, dividindo a modelagem com amostras independentes e validando em partes virgens da tabela usando a notação matricial de binarização (`get_dummies`).
-   - `ISLP::Default` (Alvo: *student*)
-   - `ISLP::Smarket` (Alvo: *Direction*)
-   - `ISLP::Weekly` (Alvo: *Direction*)
-   - `ISLP::Caravan` (Alvo: *Purchase*)
-3. **Regressão Logística Básica**: Remove o `train_test_split` e treina e verifica as informações na base de forma inteira com a demonstração estatística do modelo prever amostras que ele próprio já conhecia ("Erro de Treinamento Superestimado").
+---
 
-##  Bibliotecas e Instalação
-Para poder rodar o mesmo projeto, tenha o Python 3.10+ e rode o comando abaixo no seu terminal para puxar os requisitos fundamentais:
+## Code Overview
+
+The main script `exercicios_logistica.py` consists of 3 practical parts:
+
+1. **Random Forest and Breast Cancer Dataset:** Loads native `sklearn` data, trains the model using an 80%/20% split, plots a confusion matrix heatmap, and outputs a complete classification report.
+2. **Logistic Regression with Train/Test Split:** Re-implements 4 classic exercises from the `ISLP` library, dividing the modeling with independent samples and validating on unseen slices of the table using binarization matrix notation (`get_dummies`).
+   - `ISLP::Default` (Target: *student*)
+   - `ISLP::Smarket` (Target: *Direction*)
+   - `ISLP::Weekly` (Target: *Direction*)
+   - `ISLP::Caravan` (Target: *Purchase*)
+3. **Basic Logistic Regression:** Removes `train_test_split` to train and verify accuracy on the entire dataset, illustrating the statistical concept of "training error underestimation" when predicting samples the model has already seen.
+
+---
+
+## Libraries & Installation
+
+To run this project, make sure you have Python 3.10+ and execute the command below in your terminal to fetch the core requirements:
 
 ```bash
 pip install ISLP pandas scikit-learn matplotlib seaborn
 ```
 
-Feito isso, é só plugar o arquivo e rodar!
+Once done, run the main file:
 ```bash
 python exercicios_logistica.py
 ```
-*(Tenha em mente que as Regressões da Parte 2 e 3 só mostrarão seus relatórios no terminal logo após você fechar a janela da figura do Matplotlib que abrirá em tela na Parte 1).*
+*(Note that the Logistic Regression reports from Part 2 and 3 will print in the terminal only after closing the Matplotlib figure window that opens in Part 1).*
